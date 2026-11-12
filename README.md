@@ -1,6 +1,6 @@
 # DevOps Hands-On Challenge
 
-This round has **4 parts**.
+This round has **5 parts**.
 
 - Please talk out loud as you work, so we can follow your thinking.
 - You can use Google, documentation and `--help`.
@@ -12,6 +12,7 @@ This round has **4 parts**.
 | 2 | CI pipeline |
 | 3 | AWS |
 | 4 | Log script |
+| 5 | Terraform |
 
 ---
 
@@ -118,3 +119,31 @@ Alert windows (>20% 5xx, min 3 requests):
 
 Skipped malformed lines: 1
 ```
+
+---
+
+## Part 5: Terraform
+
+**File:** `terraform/main.tf`
+
+A teammate wrote this Terraform file to create a private `team-reports` S3 bucket.
+
+**Task 1: Make it valid**
+
+Run these commands in the `terraform/` folder:
+
+```bash
+terraform init
+terraform validate
+```
+
+It fails right now. Fix the file until `terraform validate` says:
+
+```
+Success! The configuration is valid.
+```
+
+**Task 2: Review it**
+
+The file is now valid, but is it safe to use for real? Tell us what you
+would change and why.
